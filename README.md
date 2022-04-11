@@ -1,105 +1,202 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+<div align="center" style="margin-bottom:30px">
+    <a href='https://github.com/vagr9k/gatsby-material-starter/blob/master/LICENSE'>
+    <img src="https://img.shields.io/github/license/vagr9k/gatsby-material-starter.svg" alt="Logo" />
+    </a>
+    <a href='https://github.com/vagr9k/gatsby-material-starter'>
+    <img src="https://img.shields.io/github/v/tag/Vagr9K/gatsby-material-starter" alt="Logo" />
+    </a>
+        <a href='https://github.com/vagr9k/gatsby-material-starter/stargazers'>
+    <img src="https://img.shields.io/github/stars/Vagr9K/gatsby-material-starter" alt="Logo" />
+    </a>
+        <a href="https://twitter.com/intent/tweet?text=A%20cool%20%40gatsbyjs%20starter%3A&url=https%3A%2F%2Fgithub.com%2FVagr9K%2Fgatsby-material-starter">
+    <img src="https://img.shields.io/twitter/url/https/github.com/vagr9k/gatsby-material-starter.svg?style=social" alt="Logo" />
+    </a>
+</div>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+<div align="center"  style="margin-bottom:30px">
+    <img src="docs/logos/logo.png" alt="Logo" width='400px' height='400px'/>
+</div>
+<div align="center"  style="margin-bottom:30px">
+<img src="https://badgen.net/badge/Built With/TypeScript/blue" alt="Powered by TypeScript" />
+<a href='https://coveralls.io/github/Vagr9K/gatsby-material-starter?branch=master'><img src='https://coveralls.io/repos/github/Vagr9K/gatsby-material-starter/badge.svg?branch=master' alt='Coverage Status' /></a>
+<img href="https://gatsby-theme-material.netlify.app/"><img src="https://api.netlify.com/api/v1/badges/3be71899-cdb2-4b37-a1d2-e48acde5a706/deploy-status" alt="Material Demo"/></a>
+</div>
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
 
-## 🚀 Quick start
+<div align="center"  style="margin-bottom:30px">
+<img href="https://open.vscode.dev/vagr9k/gatsby-material-starter"><img src="https://open.vscode.dev/badges/open-in-vscode.svg"/></a>
+</div>
 
-1.  **Create a Gatsby site.**
+# Gatsby Material Starter
 
-    Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)) to create a new site, specifying the default starter.
+A [Material Design](https://material.io/design) oriented blog starter for [GatsbyJS](https://github.com/gatsbyjs/gatsby/) equipped with advanced features such as SEO, image optimization, PWA capabilities and infinite scrolling feeds.
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+This starter aims to provide a minimal base for building advanced GatsbyJS powered websites by using the latest technologies to simplify your process.
 
-1.  **Start developing.**
+Starter supports both [TypeScript](https://www.typescriptlang.org/) and JavaScript, comes with [Jest](https://jestjs.io/) and [Cypress](https://www.cypress.io/) configurations and allows you to write Unit/Integration/E2E tests out of the box.
 
-    Navigate into your new site’s directory and start it up.
+The starter uses [`gatsby-theme-advanced`](https://www.npmjs.com/package/gatsby-theme-advanced) under the hood and is based on the [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter).
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+## Demo
 
-1.  **Open the source code and start editing!**
+[Material Demo](https://gatsby-theme-material.netlify.app/).
 
-    Your site is now running at `http://localhost:8000`!
+Visit [`gatsby-theme-material`](https://github.com/Vagr9K/gatsby-material-starter/tree/master/themes/material) for details regarding on how it was built using [`gatsby-theme-advanced`](https://www.npmjs.com/package/gatsby-theme-advanced).
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries)._
+## Features
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+- Gatsby v4 support
+- First class [TypeScript](https://www.typescriptlang.org/) support (for query data and components exposed by the theme)
+- [Material UI V5](https://material-ui.com/) components
+- [Emotion](https://emotion.sh/docs/introduction) used for styling
+- Posts in MDX
+  - Code syntax highlighting
+  - Embed videos
+  - Embed iframes
+- Infinite Scrolling
+- React Query for client side API calls
+- Tags
+  - Separate page for posts under each tag
+- Categories
+  - Separate page for posts under each category
+- Social features
+  - Twitter tweet button
+  - Facebook share/share count
+  - Reddit share/share count
+  - LinkedIn share button
+- Author section
+- Related posts computation and display based on category/tag match ranking
+- [Disqus](https://disqus.com/) support via [`gatsby-theme-advanced`](https://www.npmjs.com/package/gatsby-theme-advanced)
+- [gatsby-plugin-image](https://www.gatsbyjs.com/plugins/gatsby-plugin-image/) for optimized image generation
+- Inline SVG imports
+- High configurability
+- Separate components for everything:
+  - Gatsby Link utilities
+  - SEO
+  - Disqus
+- PWA features
+  - Offline support
+  - Web App Manifest support
+  - Loading progress for slow networks
+- SEO
+  - [Google gtag.js](https://developers.google.com/gtagjs/) support
+  - Sitemap generation
+  - General description tags
+  - [Google Structured Data](https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data)
+  - [OpenGraph Tags (Facebook/Google+/Pinterest)](https://ogp.me/)
+  - [Twitter Tags (Twitter Cards)](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/markup)
+- RSS feeds
+- Development tools
+  - Yarn 3
+  - [Jest](https://jestjs.io/) for unit/integration testing
+  - [Cypress](https://www.cypress.io/) for E2E testing
+  - CI via GitHub Actions
+  - CD via GitHub Actions
+  - [ESLint](https://eslint.org/) for linting
+  - [Prettier](https://prettier.io/) for code formatting
+  - [React Hooks Linting](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+  - Remark-Lint for linting Markdown
+  - write-good for linting English prose
+  - gh-pages for deploying to GitHub pages
+  - [Netlify](https://www.netlify.com/) deploy configuration
 
-## 🚀 Quick start (Gatsby Cloud)
+## Getting Started
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+Install this starter by running the following commands from your CLI:
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-default)
+```sh
+gatsby new YourProjectName https://github.com/Vagr9K/gatsby-material-starter
+cd YourProjectName
+yarn develop # or gatsby develop
+```
 
-## 🧐 What's inside?
+Note that the [Gatsby CLI](https://www.npmjs.com/package/gatsby-cli) needs to be installed and updated for the `gatsby` command to work.
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+Alternatively you can fork the project, make your changes and merge new upstream features when needed:
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+- [Fork this repository on GitHub](https://github.com/Vagr9K/gatsby-material-starter/fork)
+- Run the following commands:
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+  ```sh
+  git clone https://github.com/${YourUsername}/${YourForkName} YourForkName # Clone your fork
+  cd YourForkName
+  yarn install # or yarn install
+  yarn develop # or yarn develop
+  ```
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+## Receiving upstream updates
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+You have multiple options when it comes to receiving upstream updates:
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+- Pull and merge upstream changes into your repo
+- Change the version of `gatsby-theme-material` from local to remote.
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+First option allows you to make your own changes to the theme without having to fork and publish it. This is the default approach when you clone/fork the starter repository.
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail).
+Second option simplifies your CI/CD setup and allows you to receive updates by simply bumping the package version.
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+To switch to the remote version, open `package.json` and edit the dependency section:
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+```js
+ "gatsby-theme-material": "*",
+```
 
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+into
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+```js
+ "gatsby-theme-material": "3.1.0", // Or the version you want
+```
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+## Configuration
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+To configure the theme edit your `gatsby-config.js`:
 
-## 🎓 Learning Gatsby
+```js
+module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-theme-material`,
+      options: {
+        basePath: `/blog`,
+      },
+    },
+  ],
+};
+```
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
+For configuring the theme, consult its documentation pages:
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+- [Material](themes/material/README.md)
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+### NetlifyCMS
 
-## 💫 Deploy
+First of all, make sure to edit `static/admin/config.yml` and add your [GitHub/GitLab/NetlifyId credentials](https://www.netlifycms.org/docs/authentication-backends/):
 
-[Build, Deploy, and Host On The Only Cloud Built For Gatsby](https://www.gatsbyjs.com/products/cloud/)
+```yml
+backend:
+  name: github # Refer to https://www.netlifycms.org/docs/authentication-backends/ for auth backend list and instructions
+  branch: master # Branch to update
+  repo: vagr9k/gatsby-material-starter # Repo for pushing new commits. Make sure to replace with your repo!
+```
 
-Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
+You can visit `/admin/` after and will be greeted by a login dialog (depending on the auth provider you ave chosen above).
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+If want to customize Netlify CMS, e.g. registering custom widgets or styling the preview pane, you can do so by editing `src/netlifycms/index.js`:
+
+```js
+import CMS from "netlify-cms-app";
+
+CMS.init({
+  config: {
+    backend: {
+      name: "git-gateway",
+    },
+  },
+});
+```
+
+For NetlifyCMS specific issues visit the [official documentation](https://www.netlifycms.org/docs/intro/).
+
+# Author
+
+Ruben Harutyunyan ([@Vagr9K](https://twitter.com/Vagr9K))
