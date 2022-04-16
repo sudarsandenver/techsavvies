@@ -2,6 +2,9 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import logo from "../images/logo.svg"
+import { TextField, IconButton, InputAdornment } from "@material-ui/core"
+import SearchIcon from "@material-ui/icons/Search"
+import Button from '@mui/material/Button';
 
 const Header = ({ siteTitle }) => (
   <header
@@ -17,8 +20,7 @@ const Header = ({ siteTitle }) => (
     }}
   >
     <div
-      style={{
-        maxWidth: 960,
+      style={{ 
         padding: `0.0rem 1.0875rem`,
         alignItems: "center",
         justifyContent: "center",
@@ -36,6 +38,26 @@ const Header = ({ siteTitle }) => (
           alignContent: "center",
         }}
       ></img>
+      <span style={{
+        float: "right",
+      }}>
+        <TextField
+          label="Search"
+          InputProps={{
+            endAdornment: (
+              <InputAdornment>
+                <IconButton>
+                  <SearchIcon />
+                </IconButton>
+              </InputAdornment>
+            ),
+          }}
+        />
+        <Button variant="text" style={{
+            "textAlign": "center",
+            "top": "15px"
+        }}>Log In</Button>
+      </span>
     </div>
   </header>
 )
