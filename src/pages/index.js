@@ -4,32 +4,30 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 
-import ImgMediaCard from "../templates/ImgMediaCard"
 import { Grid } from "@mui/material"
-import awsIam from "../images/aws-iam.png"
+import awsIam from "../images/aws-iam-logo.jpg"
 import harnessAWS from "../images/harness-aws.png"
-import { Margin } from "@mui/icons-material"
 
 const IndexPage = () => (
   <Layout>
     <Grid container rowSpacing={12} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-      <Grid item  xs={12} sm={12} md={6} spacing={4}>
+      <Grid item xs={12} sm={12} md={6} spacing={4}>
         <div>
           <img
             src={awsIam}
             alt="AWS IAM"
             height="250px"
             style={{
-             marginBottom: "0px"
-           }}
-        ></img>
+              marginBottom: "0px",
+            }}
+          ></img>
         </div>
         <div
           style={{
             float: "inherit",
             top: "50%",
-            fontFamily: "sans-serif"
-
+            fontFamily: "sans-serif",
+            margin: "5px",
           }}
         >
           <h3>AWS IAM</h3>
@@ -41,17 +39,14 @@ const IndexPage = () => (
         </div>
       </Grid>
       <Grid item xs={12} sm={12} md={6} spacing={4}>
-        <div
-         
-        >
+        <div>
           <img
-          
             src={harnessAWS}
             alt="AWS CloudFormation Using Harness"
             height="250px"
             style={{
-             marginBottom: "0px"
-           }}
+              marginBottom: "0px",
+            }}
           ></img>
         </div>
         <div
@@ -59,18 +54,17 @@ const IndexPage = () => (
             float: "inherit",
             top: "50%",
             fontFamily: "sans-serif",
-            margin:"5px"
-
+            margin: "5px",
           }}
         >
           <h3>Harness CI/CD</h3>
           <span>
             {" "}
-           Harness is a Continuous Integration/Continuous Deployment tool to build, test and deploy our softwares to cloud or on-prem 
+            Harness is a Continuous Integration/Continuous Deployment tool to
+            build, test and deploy our softwares to cloud or on-prem
           </span>
         </div>
       </Grid>
-     
     </Grid>
   </Layout>
 )
